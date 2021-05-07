@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ultra&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+    
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p><a href="#" class="panel-close">Cerrar</a></p>
+      </div>
+    </div>
+    
+      <div class="statusbar"></div>
+        <div class="view view-main">
+         <div data-name="index" class="page">
+         
+            <div class="navbar color-theme-white">
+             <div class="navbar-inner sliding"> 
+             <div class="left">
+                 <a href="#" class="panel-open"">
+                 <i class="f7-icons negra">bars</i></a>
+             </div>
+                <div class="title negra centro">Bar Cervantes</div>
+             </div>
+          </div>
+        
+          <div class="toolbar toolbar-bottom-md color-theme-gray">
+            <div class="toolbar-inner">
+            </div>
+          </div>
+               
+                <div class="page-content hide-navbar-on-scroll">
+                  <div class="block">
+                    </br></br>
+                    <a href="/carta/" data-view=".page-content" class="col button button-big button-fill color-gray">Carta</a> </br></br>
+                    <a href="/pedido/" data-view=".page-content" class="col button button-big button-fill color-gray">Pedido</a> </br></br>
+                    <button class="col button button-big button-fill color-red">Moso</button>
+                    <a href="/nove/" data-view=".page-content" class="col button button-big button-fill color-gray">Novedades</a> </br></br>
+                  </div>
+                </div> <!-- div page content-->
+                
+         </div> <!-- div page-->
+        </div> <!-- div view main-->
+    </div> <!-- div app-->
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+     // Your web app's Firebase configuration
+    var firebaseConfig = {
+     apiKey: "AIzaSyBX3JkBmg2Iz6jsrtuHZdiFR_nRhU17Af4",
+     authDomain: "menubar-ee1c8.firebaseapp.com",
+     databaseURL: "https://menubar-ee1c8.firebaseio.com",
+     projectId: "menubar-ee1c8",
+     storageBucket: "",
+     messagingSenderId: "287005227465",
+     appId: "1:287005227465:web:c17cc1ec718f23eedf9018"
+     };
+    // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+</script>
+    
+</body>
+</html>
